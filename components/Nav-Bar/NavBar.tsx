@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import Logo from "../../assets/logo.svg";
@@ -6,8 +6,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignRight } from "@fortawesome/free-solid-svg-icons";
 import ShowNav from "./ShowNav";
 
+
 const NavBar = () => {
    const [show, setShow] = useState(false);
+   const [size, setSize] = useState(window.innerWidth);
+
+   const checkSize = () => {
+      if (typeof window !== "undefined") {
+         setSize(window.innerWidth);
+      }
+   };
+
+   useEffect(() => {
+      window.addEventListener("resize", checkSize);
+
+      return () => {
+         window.removeEventListener("resize", checkSize);
+      };
+   });
 
    return (
       <>

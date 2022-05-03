@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
 import Logo from "../../assets/logo.svg";
@@ -6,6 +6,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const ShowNav = ({ setShow }: any) => {
+   const [showHomeDrop, setshowHomeDrop] = useState(false);
+   const [showPagesDrop, setshowPagesDrop] = useState(false);
+   const [showBlogsDrop, setshowBlogsDrop] = useState(false);
+
+   const openHome = () => {
+      setshowHomeDrop(true);
+      setshowPagesDrop(false);
+      setshowBlogsDrop(false);
+   };
+   const openPages = () => {
+      setshowHomeDrop(false);
+      setshowPagesDrop(true);
+      setshowBlogsDrop(false);
+   };
+
+   const openBlogs = () => {
+      setshowHomeDrop(false);
+      setshowPagesDrop(false);
+      setshowBlogsDrop(true);
+   };
+
    return (
       <>
          <nav className={styles.show_nav}>
@@ -16,33 +37,35 @@ const ShowNav = ({ setShow }: any) => {
                </button>
             </header>
             <ul>
-               <aside>
+               <aside onClick={openHome}>
                   Home
-                  <div className={styles.drop}>
-                     <li>Home 1</li>
-                     <li>Home 2</li>
-                  </div>
+                  {showHomeDrop && (
+                     <div className={styles.drop}>
+                        <li>Home 1</li>
+                        <li>Home 2</li>
+                     </div>
+                  )}
                </aside>
 
-               <aside>
+               <aside onClick={openPages}>
                   Pages
-                  <div className={styles.drop}>
-                     <li>About Us</li>
-                     <li>Services</li>
-                     <li>Team</li>
-                     <li>FAQ</li>
-                  </div>
+                  {showPagesDrop && (
+                     <div className={styles.drop}>
+                        <li>Home 1</li>
+                        <li>Home 2</li>
+                     </div>
+                  )}
                </aside>
 
                <aside>Contact Us</aside>
-               <aside>
+               <aside onClick={openBlogs}>
                   Blogs
-                  <div className={styles.drop}>
-                     <li>About Us</li>
-                     <li>Services</li>
-                     <li>Team</li>
-                     <li>FAQ</li>
-                  </div>
+                  {showBlogsDrop && (
+                     <div className={styles.drop}>
+                        <li>Home 1</li>
+                        <li>Home 2</li>
+                     </div>
+                  )}
                </aside>
             </ul>
          </nav>
