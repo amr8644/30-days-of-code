@@ -6,32 +6,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignRight } from "@fortawesome/free-solid-svg-icons";
 import ShowNav from "./ShowNav";
 
-
 const NavBar = () => {
    const [show, setShow] = useState(false);
-   const [size, setSize] = useState(window.innerWidth);
-
-   const checkSize = () => {
-      if (typeof window !== "undefined") {
-         setSize(window.innerWidth);
-      }
-   };
+   const [size, setSize] = useState(Number);
 
    useEffect(() => {
-      window.addEventListener("resize", checkSize);
-
-      return () => {
-         window.removeEventListener("resize", checkSize);
-      };
-   });
-
+      if (!size) {
+         setSize(window.innerWidth);
+      }
+      window.addEventListener("resize", () => {
+         setSize(window.innerWidth);
+      });
+   }, [size]);
    return (
       <>
          <section className={styles.header}>
             <header className={styles.logo}>
                <Image src={Logo} alt="Logo" />
             </header>
-            {show ? (
+            {show && size < 950 ? (
                <ShowNav setShow={setShow} />
             ) : (
                <nav className={styles.nav}>

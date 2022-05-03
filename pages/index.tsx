@@ -7,6 +7,7 @@ import NavBar from "../components/Nav-Bar/NavBar";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
+import FirstSection from "../components/FirstSection.tsx/FirstSection";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <NavBar />
+         <FirstSection />
       </>
    );
 };
