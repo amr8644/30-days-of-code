@@ -1,14 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+
 import NavBar from "../components/Nav-Bar/NavBar";
-// The following import prevents a Font Awesome icon server-side rendering bug,
-// where the icons flash from a very large icon down to a properly sized one:
-import "@fortawesome/fontawesome-svg-core/styles.css";
-// Prevent fontawesome from adding its CSS since we did it manually above:
-import { config } from "@fortawesome/fontawesome-svg-core";
 import FirstSection from "../components/FirstSection.tsx/FirstSection";
 import SecondSection from "../components/Second Section/SecondSection";
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import ThirdSection from "../components/Third section/ThirdSection";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const Home: NextPage = () => {
@@ -22,6 +21,7 @@ const Home: NextPage = () => {
          <NavBar />
          <FirstSection />
          <SecondSection />
+         <ThirdSection />
       </>
    );
 };
