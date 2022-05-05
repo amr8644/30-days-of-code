@@ -10,7 +10,13 @@ const ThirdSection = () => {
    return (
       <section className={styles.container}>
          <div className={styles.menu}>
-            <Image src={picture} alt="menu" className={styles.menu} />
+            <Image
+               src={picture}
+               alt="menu"
+               width="100%"
+               height="100%"
+               layout="fill"
+            />
          </div>
          <article className={styles.tabs}>
             <p onMouseMove={() => setPicture(Alchohol)}>Bar Menu</p>
