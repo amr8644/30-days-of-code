@@ -8,6 +8,7 @@ import SecondSection from "../components/Second Section/SecondSection";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import ThirdSection from "../components/Third section/ThirdSection";
+import FourthSection from "../components/Fourth Section/FourthSection";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const Home: NextPage = () => {
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
          <FirstSection />
          <SecondSection />
          <ThirdSection />
+         <FourthSection />
       </>
    );
 };

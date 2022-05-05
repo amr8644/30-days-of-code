@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+.container {
+   width: 100%;
+   padding: 50px 0;
+   background-image: url("../../assets/bg.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+}
+
+.image_container {
+   width: 50%;
+   height: 100%;
+}
+.quote_container {
+   width: 50%;
+   padding-left: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.word {
+   color: white;
+   font-family: "Cormorant Upright", serif;
+   font-size: 2rem;
+   font-weight: 600;
+   margin: 30px 0;
+}
+.quote_container h2 {
+   color: #dcca87;
+   font-family: "Cormorant Upright", serif;
+   font-size: 4rem;
+   margin: 20px 0;
+}
+
+.quote {
+   color: #aaaa;
+   font-size: 1rem;
+   margin: 20px 0;
+   font-family: "Open Sans", sans-serif;
+}
+.about {
+   margin: 50px 0;
+}
+.about p {
+   color: #aaaa;
+   font-size: 1rem;
+   margin: 5px 0;
+   font-family: "Open Sans", sans-serif;
+}
+.about h4 {
+   color: #dcca87;
+   font-family: "Cormorant Upright", serif;
+   font-size: 2.5rem;
+}
+.sign {
+   width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+   .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .image_container {
+      width: 50%;
+   }
+
+   .quote_container {
+      width: 90%;
+   }
+}
+@media screen and (max-width: 650px) {
+   .image_container {
+      width: 70%;
+   }
+   .quote_container {
+      padding: 0;
+      width: 70%;
+   }
+
+   .sign {
+      width: 60%;
+   }
+   .about {
+      margin: 30px 0;
+   }
+}
+@media screen and (max-width: 500px) {
+   .image_container {
+      width: 90%;
+   }
+   .word {
+      margin: 15px 0;
+   }
+
+   .quote_container {
+      width: 90%;
+   }
+   .sign {
+      width: 70%;
+   }
+}

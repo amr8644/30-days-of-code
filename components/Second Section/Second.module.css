@@ -43,6 +43,7 @@
    flex-direction: column;
    align-items: flex-end;
 }
+
 .G_image,
 .knife_image {
    position: absolute;
@@ -90,7 +91,8 @@
       height: auto;
       flex-direction: column;
       background-size: cover;
-      /* z-index: 2; */
+      position: static;
+      z-index: 0;
    }
    .text_one,
    .text_two {
@@ -108,8 +110,7 @@
    }
    .G_image,
    .knife_image {
-      position: absolute;
-      z-index: -1;
+      display: none;
    }
 }
 
@@ -121,14 +122,6 @@
    .text_one h2,
    .text_two h2 {
       font-size: 4rem;
-   }
-   .knife_image {
-      width: 50px;
-      height: 50px;
-   }
-   .G_image {
-      width: 300px;
-      height: 300px;
    }
 }
 

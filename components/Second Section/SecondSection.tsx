@@ -16,12 +16,14 @@ const SecondSection = () => {
             </p>
             <button className={styles.button}>Know More</button>
          </article>
+
          <article className={styles.G_image}>
-            <Image src={G} alt="G" className={styles.G_image} />
+            <Image src={G} alt="G" />
          </article>
          <article className={styles.knife_image}>
-            <Image src={image} alt="Knife" className={styles.knife} />
+            <Image src={image} alt="Knife" />
          </article>
+
          <article className={styles.text_two}>
             <h2>Our History</h2>
             <p>
