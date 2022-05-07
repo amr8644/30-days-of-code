@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Second.module.css";
 import Image from "next/image";
-import image from "../../assets/knife.png";
-import G from "../../assets/G.png";
+import image from "../../public/assets/knife.png";
+import G from "../../public/assets/G.png";
 
 const SecondSection = () => {
    return (

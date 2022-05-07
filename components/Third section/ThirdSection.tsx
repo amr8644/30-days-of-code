@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Third.module.css";
-import Alchohol from "../../assets/ALchohol.jpg";
-import Egg from "../../assets/eggs.png";
-import Dessert from "../../assets/Dessert.png";
+import Alchohol from "../../public/assets/ALchohol.jpg";
+import Egg from "../../public/assets/eggs.png";
+import Dessert from "../../public/assets/Dessert.png";
 import Image from "next/image";
 
 const ThirdSection = () => {

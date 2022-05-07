@@ -3,7 +3,7 @@
 .container {
    width: 100%;
    padding: 50px 0;
-   background-image: url("../../assets/bg.png");
+   background-image: url("../../public/assets/bg.png");
    background-repeat: no-repeat;
    background-size: cover;
    display: flex;

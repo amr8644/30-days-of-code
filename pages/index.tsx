@@ -10,6 +10,8 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import ThirdSection from "../components/Third section/ThirdSection";
 import FourthSection from "../components/Fourth Section/FourthSection";
 import FifthSection from "../components/Fifth Section/FifthSection";
+import Video from "../components/Video Section/Video";
+import Blogs from "../components/Blogs/Blogs";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const Home: NextPage = () => {
@@ -26,6 +28,8 @@ const Home: NextPage = () => {
          <ThirdSection />
          <FourthSection />
          <FifthSection />
+         {/* <Video /> */}
+         <Blogs />
       </>
    );
 };

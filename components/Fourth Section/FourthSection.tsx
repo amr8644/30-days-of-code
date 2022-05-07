@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Fourth.module.css";
 import Image from "next/image";
-import Chef from "../../assets/chef.png";
-import Sign from "../../assets/sign.png";
+import Chef from "../../public/assets/chef.png";
+import Sign from "../../public/assets/sign.png";
 const FourthSection = () => {
    return (
       <section className={styles.container}>

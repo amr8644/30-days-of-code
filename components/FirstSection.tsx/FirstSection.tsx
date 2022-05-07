@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import styles from "./First.module.css";
 import Image from "next/image";
-import image from "../../assets/welcome.png";
+import image from "../../public/assets/welcome.png";
 
 const FirstSection = () => {
    const data = [

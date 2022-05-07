@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Fifth.module.css";
 import Image from "next/image";
-import Robert from "../../assets/Robert.png";
-import Wade from "../../assets/Wade.png";
-import Jade from "../../assets/Jane.png";
-import Brook from "../../assets/Brookyln.png";
+import Robert from "../../public/assets/Robert.png";
+import Wade from "../../public/assets/Wade.png";
+import Jade from "../../public/assets/Jane.png";
+import Brook from "../../public/assets/Brookyln.png";
 
 const FifthSection = () => {
    return (

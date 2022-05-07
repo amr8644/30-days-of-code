@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../public/assets/logo1.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignRight } from "@fortawesome/free-solid-svg-icons";
 import ShowNav from "./ShowNav";
