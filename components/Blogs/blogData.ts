@@ -1,11 +1,11 @@
-import Blog1 from "../../public/assets/Blog 1.png";
-import Blog2 from "../../public/assets/Blog 2.png";
-import Blog3 from "../../public/assets/Blog 3.png";
-import Blog4 from "../../public/assets/Blog 4.png";
-import Blog5 from "../../public/assets/Blog 5.png";
-import Blog6 from "../../public/assets/Blog 6.png";
-import Blog7 from "../../public/assets/Blog 7.png";
-import Blog8 from "../../public/assets/Blog 8.png";
+import Blog1 from "../../public/assets/Blog1.png";
+import Blog2 from "../../public/assets/Blog2.png";
+import Blog3 from "../../public/assets/Blog3.png";
+import Blog4 from "../../public/assets/Blog4.png";
+import Blog5 from "../../public/assets/Blog5.png";
+import Blog6 from "../../public/assets/Blog6.png";
+import Blog7 from "../../public/assets/Blog7.png";
+import Blog8 from "../../public/assets/Blog8.png";
 
 export const data = [
    {
