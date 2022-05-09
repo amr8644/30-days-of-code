@@ -92,3 +92,14 @@ const Blogs = () => {
 };
 
 export default Blogs;
+
+// export const getStaticProps = async () => {
+//    const res = await fetch(data as any);
+//    const blogs = await res.json();
+
+//    return {
+//       props: {
+//          blogs,
+//       },
+//    };
+// };
