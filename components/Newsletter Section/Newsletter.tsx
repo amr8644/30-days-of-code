@@ -10,9 +10,9 @@ const Newsletter = () => {
                <h2>Subscribe to our Channel</h2>
                <p>And never miss our updates</p>
             </article>
-            <article className={styles.image_container}>
+            <article className={styles.input_container}>
                <input type="email" placeholder="Email Address" />
-               <Button name={"Subscribe"} />
+               <button>Subscribe</button>
             </article>
          </div>
       </section>

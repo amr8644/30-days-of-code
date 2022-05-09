@@ -13,6 +13,7 @@ import Photo from "../components/PhotoGallery/Photo";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Newsletter from "../components/Newsletter Section/Newsletter";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const Home: NextPage = () => {
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
          {/* <Video /> */}
          <Blogs />
          <Photo />
+         <Newsletter />
       </>
    );
 };
