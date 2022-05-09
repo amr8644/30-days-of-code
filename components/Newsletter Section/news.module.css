@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+
+.container {
+   width: 100%;
+}
+.wrapper {
+   width: 90%;
+}
+
+.text_container {
+   width: 100%;
+}
+
+.text_container h2 {
+   color: #dcca87;
+   font-family: "Cormorant Upright", serif;
+   font-size: 4rem;
+   margin: 20px 0;
+}
+.text_container p {
+   color: #aaaa;
+   font-size: 1rem;
+   margin: 5px 0;
+   font-family: "Open Sans", sans-serif;
+}

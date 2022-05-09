@@ -2,6 +2,8 @@
    width: 100%;
    height: 100vh;
    display: flex;
+   background-image: url("../../public/assets/bg.png");
+   background-repeat: no-repeat;
 }
 
 .text_container {
