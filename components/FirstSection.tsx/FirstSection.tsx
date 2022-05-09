@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import styles from "./First.module.css";
 import Image from "next/image";
 import image from "../../public/assets/welcome.png";
+import Button from "../../componet/Button";
 
 const FirstSection = () => {
    const data = [
@@ -36,9 +37,10 @@ const FirstSection = () => {
                aliquam amet tellus
             </p>
 
-            <button className={styles.button}>
+            {/* <button className={styles.button}>
                <span>Explore Menu</span>
-            </button>
+            </button> */}
+            <Button name={"Explore Menu"} />
          </article>
          <article className={styles.images}>
             <Image src={image} alt="Gallery-1" className={styles.image} />

@@ -9,6 +9,7 @@ import FourthSection from "../components/Fourth Section/FourthSection";
 import FifthSection from "../components/Fifth Section/FifthSection";
 import Video from "../components/Video Section/Video";
 import Blogs from "../components/Blogs/Blogs";
+import Photo from "../components/PhotoGallery/Photo";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
          <FifthSection />
          {/* <Video /> */}
          <Blogs />
+         <Photo />
       </>
    );
 };
