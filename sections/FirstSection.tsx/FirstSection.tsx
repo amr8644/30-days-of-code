@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import styles from "./First.module.css";
 import Image from "next/image";
 import image from "../../public/assets/welcome.png";
-import Button from "../../componet/Button";
+import Button from "../../componets/Button";
 
 const FirstSection = () => {
    const data = [

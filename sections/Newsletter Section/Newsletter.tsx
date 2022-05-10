@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../componet/Button";
+import Button from "../../componets/Button";
 import Footer from "../Footer/Footer";
 import styles from "./news.module.css";
 const Newsletter = () => {

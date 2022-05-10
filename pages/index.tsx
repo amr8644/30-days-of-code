@@ -1,19 +1,19 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import NavBar from "../components/Nav-Bar/NavBar";
-import FirstSection from "../components/FirstSection.tsx/FirstSection";
-import SecondSection from "../components/Second Section/SecondSection";
-import ThirdSection from "../components/Third section/ThirdSection";
-import FourthSection from "../components/Fourth Section/FourthSection";
-import FifthSection from "../components/Fifth Section/FifthSection";
-import Video from "../components/Video Section/Video";
-import Blogs from "../components/Blogs/Blogs";
-import Photo from "../components/PhotoGallery/Photo";
+import NavBar from "../sections/Nav-Bar/NavBar";
+import FirstSection from "../sections/FirstSection.tsx/FirstSection";
+import SecondSection from "../sections/Second Section/SecondSection";
+import ThirdSection from "../sections/Third section/ThirdSection";
+import FourthSection from "../sections/Fourth Section/FourthSection";
+import FifthSection from "../sections/Fifth Section/FifthSection";
+import Video from "../sections/Video Section/Video";
+import Newsletter from "../sections/Newsletter Section/Newsletter";
+import Blogs from "../sections/Blogs/Blogs";
+import Photo from "../sections/PhotoGallery/Photo";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import Newsletter from "../components/Newsletter Section/Newsletter";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const Home: NextPage = () => {
