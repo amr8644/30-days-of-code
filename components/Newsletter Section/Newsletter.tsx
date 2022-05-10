@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../../componet/Button";
+import Footer from "../Footer/Footer";
 import styles from "./news.module.css";
 const Newsletter = () => {
    return (
@@ -15,6 +16,7 @@ const Newsletter = () => {
                <button>Subscribe</button>
             </article>
          </div>
+         <Footer />
       </section>
    );
 };
