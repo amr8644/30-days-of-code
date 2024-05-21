@@ -7,12 +7,23 @@
 #include <unordered_map>
 #include <vector>
 
+
+/*
+    Program class where all the functions used in the program
+*/
 class Program {
 public:
+
+/*
+    Init the functions to be used in the class
+*/
   std::vector<std::string> program_random_question();
   std::string program_white_space(const std::string &str);
 
 private:
+/*
+    All questions and answers are inside the map
+*/
   std::unordered_map<std::string, std::string> questions = {
       {"1 + 1", "2"},
       {"2 + 3", "5"},
@@ -31,7 +42,9 @@ private:
                    {"Average of 15, 25, 35, 45, 55", "35"}
   };
 };
-
+/*
+    Parses the questions and answers from the "questions" map
+*/
 std::string Program::program_white_space(const std::string &str) {
   size_t first = str.find_first_not_of(" \t\n\r");
   if (first == std::string::npos) {
@@ -40,6 +53,12 @@ std::string Program::program_white_space(const std::string &str) {
   size_t last = str.find_last_not_of(" \t\n\r");
   return str.substr(first, last - first + 1);
 }
+
+/*
+ Assuming we have a map called 'questions' that stores the questions
+ ands tores the corresponding answers
+ Function to randomly ask a question from the map
+*/
 std::vector<std::string> Program::program_random_question() {
   int index = 1;
   std::random_device rd;
