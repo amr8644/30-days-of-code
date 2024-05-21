@@ -31,7 +31,7 @@ int main(void) {
 
       while (again != 3 && start.program_white_space(answer) !=
                                start.program_white_space(a.back())) {
-        std::cout << "Try again: "
+        std::cout << "Wrong Answer...Try again: "
                   << "\n\n";
         std::cout << "Question: " << a.front() << std::endl;
         std::cout << "Answer: ";
@@ -41,13 +41,13 @@ int main(void) {
       std::cout << "Correct Answer: " << a.back() << std::endl;
     } else {
       score++;
-      std::cout << "Your correct. Moving on..."
+      std::cout << "Your answer is Correct, good job! . Moving on..."
                 << "\n\n";
     }
     count++;
   }
 
-  std::cout << "Questions asked: " << q_nums << "\n\n";
+  std::cout <<"\n" << "Questions asked: " << q_nums << "\n";
   std::cout << "Correct answers: " << score << "\n";
 
   return 0;
