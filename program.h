@@ -7,40 +7,37 @@
 #include <unordered_map>
 #include <vector>
 
-
 /*
     Program class where all the functions used in the program
 */
 class Program {
 public:
-
-/*
-    Init the functions to be used in the class
-*/
+  /*
+      Init the functions to be used in the class
+  */
   std::vector<std::string> program_random_question();
   std::string program_white_space(const std::string &str);
 
 private:
-/*
-    All questions and answers are inside the map
-*/
+  /*
+      All questions and answers are inside the map
+  */
   std::unordered_map<std::string, std::string> questions = {
       {"1 + 1", "2"},
       {"2 + 3", "5"},
       {"9 + 3", "12"},
       {"1 + 1", "2"},
-            {"2 + 3", "5"},
-            {"9 + 3", "12"},
-            {"892 - 345", "547"},
-            {"23 * 56", "1288"},
-            {"780 / 10", "78"},
-            {"987 + 654 + 321", "1962"},
-            {"Factorial of 5", "120"},
-                   {"Factorial of 7", "5040"},
-                   {"Factorial of 10", "3628800"},
-                   {"Average of 10, 20, 30, 40, 50", "30"},
-                   {"Average of 15, 25, 35, 45, 55", "35"}
-  };
+      {"2 + 3", "5"},
+      {"9 + 3", "12"},
+      {"892 - 345", "547"},
+      {"23 * 56", "1288"},
+      {"780 / 10", "78"},
+      {"987 + 654 + 321", "1962"},
+      {"Factorial of 5", "120"},
+      {"Factorial of 7", "5040"},
+      {"Factorial of 10", "3628800"},
+      {"Average of 10, 20, 30, 40, 50", "30"},
+      {"Average of 15, 25, 35, 45, 55", "35"}};
 };
 /*
     Parses the questions and answers from the "questions" map
